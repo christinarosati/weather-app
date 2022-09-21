@@ -1,6 +1,7 @@
 // DISPLAY DAY & TIME
 
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let days = [
     "Sunday",
     "Monday",
@@ -24,10 +25,6 @@ function formatDate(date) {
   return `${day}, ${hour}:${minute}`;
 }
 
-let dayAndTime = document.querySelector("#day-time");
-let currentTime = new Date();
-dayAndTime.innerHTML = formatDate(currentTime);
-
 // WEATHER API
 
 function showCityTemperature(response) {
@@ -41,6 +38,10 @@ function showCityTemperature(response) {
     response.data.wind.speed
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  console.log(response.data);
+  document.querySelector("#day-time").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
 }
 
 function showPosition(position) {

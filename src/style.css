@@ -1,0 +1,89 @@
+body {
+  position: relative;
+  left: 10px;
+  top: 30px;
+}
+h1 {
+  padding-top: 10px;
+  padding-left: 30px;
+  color: #090089;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #090089;
+}
+
+.weather-app {
+  background: #91ceff;
+  border: 1px solid #090089;
+  border-radius: 30px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.current-time {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.current-forecast {
+  text-align: center;
+}
+
+.current-temp {
+  font-size: 40px;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.units {
+  position: relative;
+  top: -18px;
+}
+
+.additional-details {
+  font-size: 18px;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+.form-control {
+  position: relative;
+  top: 10px;
+  right: 15px;
+}
+
+.five-day-forecast {
+  text-align: center;
+  padding: 30px 10px;
+  padding: 30px 40px 10px 0;
+}
+
+.current-location-button {
+  position: relative;
+  top: 10px;
+  left: 40px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #090089;
+  color: #fff;
+  border: 1px solid #090089;
+  box-shadow: rgb(9 0 137 / 8%) 0px 8px 8px 0;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.current-location-button:hover {
+  background: #fff;
+  color: #090089;
+}
+
+.github-link {
+  font-family: "Source Sans Pro", sans-serif;
+}

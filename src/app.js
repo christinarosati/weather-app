@@ -38,7 +38,6 @@ function showCityTemperature(response) {
     response.data.wind.speed
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  console.log(response.data);
   document.querySelector("#day-time").innerHTML = formatDate(
     response.data.dt * 1000
   );

@@ -15,6 +15,10 @@ ul {
   padding-left: 0;
   color: #090089;
 }
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 
 .weather-app {
   background: #91ceff;
@@ -24,6 +28,7 @@ ul {
   max-width: 600px;
   margin: 30px auto;
   font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 10px;
 }
 
 .current-time {

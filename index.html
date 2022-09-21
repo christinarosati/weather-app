@@ -21,7 +21,91 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
+         <div class="weather-app">
+           
+            <div class="row">
+                <div class="col-4">
+      <h1 id="city">Montreal</h1>
+      <ul class="current-time">
+        <li id="day-time">Wednesday, 12:08</li>
+      </ul>
+      </div>
+      <div class="col-4">
+        <button class="current-location-button" id="current-location-button">Current Location</button>
+      </div>
+      <div class="col-4">
+       <form id="search-city-form">
+                <input type="search" placeholder="Search a city..." class="form-control" autocomplete="off" autofocus="on" id="search-city-form-input"/>
+                <input type="submit" value="Go" class="form-control"   />
+            </form>
+            </div>
+            </div>
+      <div class="row">
+        <div class="col-6">
+          <ul class="current-forecast">
+            <li><span class="current-temp" id="temperature">15</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</span></a>
+            </li>
+            <li class="description" id="description">Cloudy</li>
+            <li>☁️</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="additional-details">
+            <li><strong>Wind:</strong> <span id="windspeed">3</span>m/s</li>
+            <li><strong>Humidity:</strong> <span id="humidity">85</span>%</li>
+          </ul>
+        </div>
+      </div>
+      <div class="five-day-forecast">
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li><strong>Friday</strong></li>
+              <li>08/19</li>
+              <li>28°C</li>
+              <li>🌤</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><strong>Saturday</strong></li>
+              <li>08/20</li>
+              <li>30°C</li>
+              <li>🌤</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><strong>Sunday</strong></li>
+              <li>08/21</li>
+              <li>29°C</li>
+              <li>⛈</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><strong>Monday</strong></li>
+              <li>08/22</li>
+              <li>25°C</li>
+              <li>⛈</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><strong>Tuesday</strong></li>
+              <li>08/23</li>
+              <li>25°C</li>
+              <li>🌩</li>
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+      
+    </div>
     </div>
     <script src="src/app.js"></script>
   </body>

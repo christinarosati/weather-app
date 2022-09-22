@@ -89,6 +89,12 @@ ul {
   color: #090089;
 }
 
+.active {
+  color: #090089;
+  cursor: default;
+  text-decoration: none;
+}
+
 .github-link {
   font-family: "Source Sans Pro", sans-serif;
 }

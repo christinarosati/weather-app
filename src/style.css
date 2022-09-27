@@ -66,8 +66,20 @@ ul {
 
 .five-day-forecast {
   text-align: center;
-  padding: 30px 10px;
-  padding: 30px 40px 10px 0;
+  padding-bottom: 20px;
+  color: #090089;
+}
+
+.five-day-forecast-date {
+  font-size: 16px;
+}
+
+.five-day-forecast-temperature {
+  font-size: 13px;
+}
+
+.five-day-forecast-temperature-min {
+  opacity: 0.5;
 }
 
 .current-location-button {

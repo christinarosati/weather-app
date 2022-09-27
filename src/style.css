@@ -64,21 +64,21 @@ ul {
   right: 15px;
 }
 
-.five-day-forecast {
+.forecast {
   text-align: center;
   padding-bottom: 20px;
   color: #090089;
 }
 
-.five-day-forecast-date {
+.forecast-date {
   font-size: 16px;
 }
 
-.five-day-forecast-temperature {
+.forecast-temperature {
   font-size: 13px;
 }
 
-.five-day-forecast-temperature-min {
+.forecast-temperature-min {
   opacity: 0.5;
 }
 

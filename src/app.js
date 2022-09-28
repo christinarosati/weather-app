@@ -83,7 +83,7 @@ function showCityTemperature(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#windspeed").innerHTML = Math.round(
-    response.data.wind.speed
+    response.data.wind.speed * 3.6
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#day-time").innerHTML = formatDate(

@@ -38,7 +38,7 @@ ul {
   padding-left: 30px;
 }
 
-.current-forecast {
+.current-temperature {
   text-align: center;
 }
 
@@ -52,7 +52,7 @@ ul {
 
 .units {
   position: relative;
-  top: -18px;
+  top: -20px;
 }
 
 .additional-details {
@@ -68,7 +68,6 @@ ul {
 
 .forecast {
   text-align: center;
-
   padding-bottom: 25px;
   color: #090089;
   margin-left: 80px;

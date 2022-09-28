@@ -27,7 +27,8 @@ function formatDate(timestamp) {
 
 // WEATHER API
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -56,7 +57,12 @@ function displayForecast() {
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
+}
+
+function getForecast(coordinates) {
+  let apiKey = "c819171fe0abdc14039af4ef5dda283b";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function showCityTemperature(response) {
@@ -82,6 +88,8 @@ function showCityTemperature(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function showPosition(position) {
@@ -144,4 +152,3 @@ let celciusLink = document.querySelector("#celsius-link");
 celciusLink.addEventListener("click", showCelciusTemperature);
 
 searchCity("Montreal");
-displayForecast();
